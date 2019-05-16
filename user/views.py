@@ -9,11 +9,12 @@ from orsp_django import settings
 import random, time, pymysql
 from .miaodi import *
 connection = pymysql.Connect(
-            host='cdb-4hg425ql.gz.tencentcdb.com',
-            port=10034,
+            # host='cdb-4hg425ql.gz.tencentcdb.com',
+            host='127.0.0.1',
+            port=3307,
             user='root',
-            passwd='13866015127rbs',
-            db='dj_orsp',
+            # passwd='0522',
+            db='orsp',
             charset='utf8'
         )
 from django.db.models import Q

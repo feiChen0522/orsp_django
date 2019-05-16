@@ -142,7 +142,8 @@ CORS_ORIGIN_WHITELIST = (
       'localhost:63343',
       'localhost:63342',
       'localhost:8080',
-    # '0.0.0.0/0'
+    # '0.0.0.0/0',
+    # '*'
 )
 CORS_ALLOW_METHODS = (
 'GET',
@@ -152,6 +153,8 @@ CORS_ALLOW_METHODS = (
 'DELETE',
 'OPTIONS'
 )
+
+# 跨域允许的头部参数(可选)
 CORS_ALLOW_HEADERS = (
     'x-requested-with',
     'content-type',
